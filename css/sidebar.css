@@ -1,0 +1,35 @@
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20rem;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.sidebar-content {
+    padding: 6rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: var(--primary-color);
+}

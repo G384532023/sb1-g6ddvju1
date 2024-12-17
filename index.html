@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Introduction</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <img src="https://via.placeholder.com/150x50" alt="Game Logo" class="logo">
+                <div class="player-count">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>2-4 Players</span>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#join">Join Game</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Game Title</h1>
+                <a href="#join" class="cta-button">Join Game</a>
+            </div>
+        </section>
+
+        <section class="info" id="info">
+            <h2>Information</h2>
+            <div class="info-grid"></div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-track"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="https://via.placeholder.com/150x50" alt="Game Logo" class="logo">
+                <div class="social-links"></div>
+            </div>
+            <p class="copyright">© 2024 CoCoRP JP</p>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
